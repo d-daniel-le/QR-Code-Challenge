@@ -1,0 +1,78 @@
+body{
+    background-color: #d5e1ef;
+    padding: 10%;
+    font-family: "Outfit";
+}
+
+.container{
+    width: 320px;
+    height: 499px;
+    background-color: #FFFFFF;
+    margin: 0 39% 0 39%;
+    border-radius: 20px;
+}
+
+.container .qr-code img{
+    width: 288px;
+    height: 288px;
+    margin: 16px 16px 24px 16px;
+    border-radius: 10px;
+}
+
+.text{
+    margin: 0px 16px 40px 16px;
+}
+
+.text > h1, p{
+    margin: 0px 16px 16px 16px;
+    font-size: 15px;
+    text-align: center;
+}
+
+.text h1{
+    font-weight: 700;
+    font-size: 23px;
+    color: #1f314f;
+}
+
+.text p{
+    font-size: 15px;
+    color: #68778D;
+}
+
+@media  (max-width: 1440px) {
+    body{
+        padding: 12% 10% 12% 10%;
+    }
+    .container{
+        margin: 0 36% 0 36%;
+    }
+
+}
+
+@media (max-width: 1440px) and (min-height: 960px){
+    body{
+        padding: 14% 10% 14% 10%;
+    }
+    .container{
+        margin: 0 36% 0 36%;
+    }
+}
+
+@media (max-width: 375px) {
+    body{
+        padding: 40% 5% 40% 5%;
+    }
+    .container{
+        margin: 0 0% 0 0%;
+    }
+}
+
+@media (max-width: 375px) and (min-height: 812px){
+    body{
+        padding: 37% 5% 37% 5%;
+    }
+    .container{
+        margin: 0 0% 0 0%;
+    }
+}
