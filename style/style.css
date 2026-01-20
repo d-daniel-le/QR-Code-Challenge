@@ -2,14 +2,18 @@ body{
     min-height: 100vh;
     background-color: #d5e1ef;
     margin: 0;
-    /* padding: 10%; */
     font-family: "Outfit";
 
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
 }
 
+.attribution.multi-grid{
+    margin-bottom: 25px;
+}
+/* qr code tile */
 .container{
     width: 320px;
     height: 499px;
@@ -17,6 +21,7 @@ body{
     /* margin: 0 39% 0 39%; */
     border-radius: 20px;
     box-shadow: 0px 25px 25px rgba(0, 0, 0, 0.0477);
+    margin-bottom: 25px;
 }
 
 .container .qr-code img{
@@ -45,6 +50,37 @@ body{
 .text p{
     font-size: 15px;
     color: #68778D;
+}
+
+/* grid */
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+ul li{
+    margin: 25px 0;
+}
+
+@media (min-width: 1000px){
+    ul {
+        display: grid;
+        grid-template-columns: 320px 320px 320px;
+        column-gap: 25px;
+        row-gap: 25px;
+        margin: 2% 0;
+    }
+
+    ul li{
+
+        margin: 0 0;
+    }
+
+    ul li:last-child{
+        grid-column: 2;
+        /* border: double cornflowerblue; */
+    }
 }
 
 /* @media  (max-width: 1440px) {
